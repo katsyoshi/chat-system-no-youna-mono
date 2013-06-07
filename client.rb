@@ -13,5 +13,9 @@ class Client
   def messages(n)
     @server.call(:messages, n)
   end
+
+  def close
+    @server.close
+  end
 end
 end
